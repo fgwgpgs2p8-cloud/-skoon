@@ -1,0 +1,191 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>سكون | skoon</title>
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css">
+
+<style>
+
+/* ===== الخلفية ===== */
+body {
+    margin:0;
+    font-family:Arial;
+    min-height:100vh;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+
+    background:
+    linear-gradient(rgba(10, 34, 107, 0.272), rgba(15, 78, 156, 0.386)),
+    url("bake.jpeg");
+
+    background-size:cover;
+    background-position:center;
+    background-repeat:no-repeat;
+}
+
+/* ===== الكارد ===== */
+.card{
+    position:relative;
+    background:rgba(255, 255, 255, 0.65);
+    padding:25px;
+    border-radius:20px;
+    width:320px;
+    text-align:center;
+    box-shadow:0 10px 30px rgba(0, 0, 0, 0);
+}
+
+/* ===== الشير ===== */
+.share{
+    position:absolute;
+    top:15px;
+    left:15px;
+    background:#f3f3f3;
+    width:35px;
+    height:35px;
+    border-radius:50%;
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+.share:hover{
+    background:rgb(15, 78, 156,0.386);
+    color:white;
+}
+.logo{
+    width:120px;
+    height:120px;
+
+    border-radius:50%;
+    overflow:hidden;
+
+    margin:0 auto 20px;
+
+    border:2px solid rgba(255,255,255,0.8);
+
+    box-shadow:0 8px 20px rgba(0,0,0,0.15);
+
+    transition:0.3s ease;
+}
+
+/* الصورة داخل الشعار */
+.logo img{
+    width:100%;
+    height:98%;
+
+    object-fit:cover;
+
+    object-position:55% 0.50%;
+
+    transform:scale(1.30);
+
+    transition:0.3s ease;
+}
+/* حركة خفيفة */
+.logo:hover img{
+    transform:scale(1.39);
+}
+
+
+
+
+/* ===== النص ===== */
+p{
+    color:#121111;
+    font-size:16px;
+}
+
+/* ===== الأزرار ===== */
+a{
+    display:flex;
+    align-items:center;
+    justify-content:center;
+    position:relative;
+    margin:10px 0;
+    padding:12px;
+    border-radius:12px;
+    text-decoration:none;
+    background:#f3f3f3;
+    color:#333;
+    font-weight:bold;
+    transition:0.3s;
+}
+
+a i{
+    position:absolute;
+    left:15px;
+    font-size:18px;
+}
+
+/* النص بالنص */
+a span{
+    width:100%;
+    text-align:center;
+}
+
+/* hover */
+a:hover{
+    background:#698aba;
+    color:white;
+}
+
+/* ===== الجوال ===== */
+@media (max-width: 768px) {
+    body {
+        background-position: center top;
+    }
+}
+
+</style>
+</head>
+
+<body>
+
+<div class="card">
+
+<!-- زر الشير -->
+<div class="share" onclick="navigator.clipboard.writeText(window.location.href); alert('تم نسخ الرابط 👍')">
+<i class="fa-solid fa-share-nodes"></i>
+</div>
+
+<div class="logo">
+    <img src="image1.png" alt="logo">
+</div>
+<h1>سكون | skoon</h1>
+<p>وجهتكم المثالية للراحة والاستجمام</p>
+
+<a href="https://wa.me/966540775580" target="_blank">
+<i class="fa-brands fa-whatsapp"></i>
+<span>whatsapp</span>
+</a>
+
+<a href="https://instagram.com/skoon.tabuk2026" target="_blank">
+<i class="fa-brands fa-instagram"></i>
+<span>instagram</span>
+</a>
+
+<a href="https://tiktok.com/@skoon.tabuk2026" target="_blank">
+<i class="fa-brands fa-tiktok"></i>
+<span>tiktok</span>
+</a>
+
+<a href="https://snapchat.com/add/skoon.tabuk2026" target="_blank">
+<i class="fa-brands fa-snapchat"></i>
+<span>snapchat</span>
+</a>
+
+<a href="https://www" target="_blank">
+<i class="fa-solid fa-location-dot"></i>
+<span>location</span>
+</a>
+
+</div>
+
+</body>
+</html>
